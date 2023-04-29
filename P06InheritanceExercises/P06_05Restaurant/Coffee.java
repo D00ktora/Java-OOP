@@ -1,0 +1,24 @@
+/**
+ * Created by IntelliJ IDEA
+ * User: Stilyan Petrov
+ * Date: 18.4.2023 г.
+ * Time: 6:38
+ */
+package P06InheritanceExercises.P06_05Restaurant;
+
+import java.math.BigDecimal;
+
+public class Coffee extends HotBeverage{
+    public static final double COFFEE_MILLILITERS = 50;
+    public static final BigDecimal COFFEE_PRICE = BigDecimal.valueOf(3.50);
+    private double caffeine;
+
+    public Coffee(String name, double caffeine) {
+        super(name, COFFEE_PRICE, COFFEE_MILLILITERS);
+        this.caffeine = caffeine;
+    }
+
+    public double getCaffeine() {
+        return caffeine;
+    }
+}
